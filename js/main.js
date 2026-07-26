@@ -144,7 +144,7 @@ function toggleMenu() {
 function sendCareerEmail(event) {
   event.preventDefault();
 
-  const ownerEmail = "careers@housethat.in";
+  const ownerEmail = "housethatstudio@gmail.com";
 
   const name = document.getElementById("careerName")?.value || "";
   const email = document.getElementById("careerEmail")?.value || "";
@@ -177,7 +177,7 @@ ${name}`;
 function openEmail(e) {
   e.preventDefault();
 
-  const email = "jaydhas238@gmail.com";
+  const email = "housethatstudio@gmail.com";
   const subject = "Website Enquiry";
 
   if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
@@ -1321,7 +1321,7 @@ Project Location: ${location}
 
 Looking forward to discussing my project with your team.`;
 
-        const whatsappNumber = "917972219776"; // Replace with HouseThat WhatsApp number
+        const whatsappNumber = "9178210 75583"; // Replace with HouseThat WhatsApp number
 
         const whatsappURL =
 `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
