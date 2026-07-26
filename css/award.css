@@ -1,0 +1,595 @@
+html,
+body{
+ 
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x:hidden;
+    background:#111111;
+
+}
+
+/*=====================================
+RECOGNITION HERO
+=====================================*/
+
+.recognition-hero{
+
+    position:relative;
+    width:100%;
+    height:100vh;
+    background:url("../images/Dubai1.jpg") center center/cover no-repeat;
+
+}
+
+.recognition-overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.40);
+
+}
+
+.recognition-content{
+
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+.recognition-title{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    color:#F5F2EB;
+
+}
+
+/*=====================================
+RECOGNITION STORY
+=====================================*/
+
+.recognition-story{
+
+    display:flex;
+    align-items:stretch;
+    gap:12px;
+
+    margin-top:12px;
+
+    background:#111111;
+
+}
+
+.recognition-image{
+
+    flex:1;
+
+}
+
+.recognition-image img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+.recognition-text{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:80px;
+
+}
+
+.recognition-subtitle{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    color:#C79A46;
+
+    margin-bottom:25px;
+
+}
+
+.recognition-text h2{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:4px;
+    text-transform:uppercase;
+
+    color:#F5F2EB;
+
+    margin-bottom:25px;
+
+}
+
+.recognition-text p{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    line-height:2;
+
+    color:#F5F2EB;
+
+    opacity:.9;
+
+}
+
+/*=====================================
+RECOGNITION GALLERY
+=====================================*/
+
+.recognition-gallery{
+
+    display:flex;
+    gap:12px;
+
+    margin-top:12px;
+
+    width:100%;
+
+}
+
+.gallery-image{
+
+    flex:1;
+    overflow:hidden;
+
+}
+
+.gallery-image img{
+
+    display:block;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+  
+}
+
+
+
+/*=====================================
+MOBILE
+=====================================*/
+
+@media(max-width:768px){
+
+.recognition-hero{
+
+    height:100svh;
+    margin-top:-76px;
+    padding-top:76px;
+
+}
+
+.recognition-title{
+
+    letter-spacing:5px;
+
+}
+
+.recognition-story{
+
+    flex-direction:column;
+
+}
+
+.recognition-image img{
+
+    height:auto;
+
+}
+
+.recognition-text{
+
+    padding:50px 30px;
+
+}
+
+.recognition-gallery{
+
+    flex-direction:column;
+
+}
+
+.gallery-image{
+
+    width:100%;
+
+}
+
+.gallery-image img{
+
+    height:auto;
+
+}
+
+}
+
+/*=====================================
+RECOGNITION QUOTE
+=====================================*/
+
+.recognition-quote{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    margin-top:12px;
+
+    background:url("../images/Dubai3.jpg") center center/cover no-repeat;
+
+}
+
+.recognition-quote-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.recognition-quote-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    z-index:2;
+
+}
+
+.recognition-quote-title{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#C79A46;
+
+    margin-bottom:30px;
+
+}
+
+.recognition-quote-text{
+
+    max-width:720px;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    margin:0;
+
+}
+
+@media(max-width:768px){
+
+.recognition-quote{
+
+    height:80vh;
+
+}
+
+.recognition-quote-content{
+
+    padding:0 30px;
+
+}
+
+.recognition-quote-title{
+
+    letter-spacing:5px;
+
+}
+
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta-section{
+
+    width:100%;
+
+    min-height:55vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 24px;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.cta-content{
+
+    width:100%;
+
+    max-width:650px;
+
+    margin:0 auto;
+
+}
+.cta-content span{
+
+    display:block;
+
+    font-size:15px;
+
+    font-family:'Inter',sans-serif;
+
+    color:#F5F2EB;
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+}
+.cta-content p{
+
+    font-size:15px;
+
+    font-family:'Inter',sans-serif;
+
+    color:#F5F2EB;
+
+    line-height:2;
+
+    margin-bottom:30px;
+
+}
+
+.cta-content a{
+
+    text-decoration:none;
+
+    color:#F5F2EB;
+
+    border-bottom:1px solid #F5F2EB;
+
+    padding-bottom:4px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.cta-content a:hover{
+
+    color:#C79A46;
+
+    border-color:#C79A46;
+
+}
+
+/*==============================
+FOOTER
+==============================*/
+
+
+/*=====================================
+FOOTER
+=====================================*/
+
+.footer{
+
+    width:100%;
+
+    background:#111111;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:60px 24px 30px;
+
+    box-sizing:border-box;
+
+    text-align:center;
+
+}
+
+/* Links */
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+
+    margin-bottom:40px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#F5F2EB;
+
+    font-size:15px;
+
+    transition:.35s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:#C79A46;
+
+}
+
+/* Contact */
+
+.footer-contact{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.footer-contact a,
+
+.footer-contact span{
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+}
+
+/* Social */
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    margin-bottom:45px;
+
+}
+
+.footer-social a{
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.35s ease;
+
+}
+
+.footer-social a:hover{
+
+    color:#C79A46;
+
+}
+
+/* Copyright */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+    color:rgba(245,242,235,.55);
+
+    font-size:14px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.footer{
+
+    padding:50px 24px 30px;
+
+}
+
+.footer-links,
+.footer-contact,
+.footer-social{
+
+    width:100%;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+}
+
+}
