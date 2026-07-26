@@ -28,7 +28,7 @@ Project Location: ${location}
 
 Looking forward to discussing my project with your team.`;
 
-        const whatsappNumber = "917972219776"; // Replace with HouseThat WhatsApp number
+        const whatsappNumber = "9178210 75583"; // Replace with HouseThat WhatsApp number
 
         const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
 
