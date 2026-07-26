@@ -41,12 +41,12 @@ Please attach your resume before sending this email.`;
         if (isMobile) {
 
             window.location.href =
-                `mailto:studio@housethat.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                `mailto:housethatstudio@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         } else {
 
             const gmailURL =
-                `https://mail.google.com/mail/?view=cm&fs=1&to=studio@housethat.in&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                `https://mail.google.com/mail/?view=cm&fs=1&to=housethatstudio@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
             window.open(gmailURL, "_blank");
 
