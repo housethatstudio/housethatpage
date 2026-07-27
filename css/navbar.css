@@ -540,7 +540,7 @@ MOBILE MENU
 
 .ht-mobile-nav.active{
 
-    transform:translateX(-50%);
+    transform:translateX(0);
 
 }
 
@@ -721,11 +721,9 @@ padding:35px 25px;
 
     top:90px;
 
-    left:50%;
-
-    transform:translateX(120%);
-
-    width:88%;
+    left:0;
+    width:100%;
+    transform:translateX(100%);
 
     max-width:420px;
 
