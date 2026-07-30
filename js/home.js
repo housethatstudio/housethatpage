@@ -21,3 +21,15 @@ const swiper = new Swiper(".testimonialSwiper", {
     },
 
 });
+
+const navbar = document.querySelector(".ht-navbar");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+});
