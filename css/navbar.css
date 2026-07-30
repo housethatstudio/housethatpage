@@ -14,6 +14,10 @@ HOUSETHAT EDITORIAL NAVBAR
 NAVBAR
 ============================*/
 
+/*==========================================================
+NAVBAR
+==========================================================*/
+
 .ht-navbar{
 
     position:fixed;
@@ -22,6 +26,7 @@ NAVBAR
     left:0;
 
     width:100%;
+
     height:110px;
 
     padding:0 48px;
@@ -34,7 +39,63 @@ NAVBAR
 
     z-index:9999;
 
-    transition:.45s ease;
+    transition:
+        background .45s ease,
+        backdrop-filter .45s ease,
+        border .45s ease,
+        padding .45s ease,
+        height .45s ease;
+
+}
+
+/*==========================================================
+SCROLLED
+==========================================================*/
+
+.ht-navbar.scrolled{
+
+    height:82px;
+
+    padding:0 36px;
+
+    background:rgba(15,15,15,.55);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.ht-navbar.scrolled .ht-brand h1{
+
+    font-size:14px;
+
+}
+
+.ht-navbar.scrolled .ht-brand p{
+
+    opacity:.6;
+
+}
+
+.ht-navbar.scrolled .ht-logo img{
+
+    width:36px;
+
+}
+
+.ht-navbar.scrolled .ht-left-nav{
+
+    gap:14px;
+
+}
+
+.ht-navbar.scrolled .ht-left-nav a,
+.ht-navbar.scrolled .ht-project-btn{
+
+    font-size:11px;
 
 }
 
@@ -84,6 +145,39 @@ LEFT MENU
     letter-spacing:.22em;
 
     transition:.35s;
+
+}
+.ht-project-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ht-project-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:0;
+
+    height:1px;
+
+    background:#C79A46;
+
+    transition:.45s;
+
+}
+
+.ht-project-btn:hover::after{
+
+    width:100%;
 
 }
 
@@ -210,5 +304,120 @@ PROJECT BUTTON
 .ht-projects:hover .ht-plus{
 
     transform:rotate(45deg);
+
+}
+
+/*==========================================================
+PROJECTS DROPDOWN
+==========================================================*/
+
+.ht-project-dropdown{
+
+    position:absolute;
+
+    top:0;
+    left:170px;
+
+    width:280px;
+
+    padding:22px;
+
+    background:rgba(22,22,22,.92);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(199,154,70,.18);
+
+    border-radius:18px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateX(-25px);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease,
+        visibility .45s;
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.35);
+
+}
+
+/* Show */
+
+.ht-projects:hover .ht-project-dropdown{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateX(0);
+
+}
+
+/* Links */
+
+.ht-project-dropdown a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 0;
+
+    text-decoration:none;
+
+    color:#F5F2EB;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:12px;
+
+    font-weight:400;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    transition:.35s ease;
+
+}
+
+/* Gold Number */
+
+.ht-project-dropdown a::before{
+
+    content:"";
+
+    width:18px;
+
+    height:1px;
+
+    background:rgba(199,154,70,.35);
+
+    transition:.35s;
+
+}
+
+/* Hover */
+
+.ht-project-dropdown a:hover{
+
+    color:#C79A46;
+
+    padding-left:10px;
+
+}
+
+.ht-project-dropdown a:hover::before{
+
+    width:36px;
+
+    background:#C79A46;
 
 }
