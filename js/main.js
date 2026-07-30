@@ -1340,3 +1340,16 @@ Looking forward to discussing my project with your team.`;
 const swiper = new Swiper(...);
 
 */
+
+
+const navbar = document.querySelector(".ht-navbar");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+});
