@@ -22,20 +22,15 @@ const swiper = new Swiper(".testimonialSwiper", {
 
 });
 
-const navbar = document.querySelector(".ht-navbar");
+<script>
+const menuBtn=document.getElementById("htMenuBtn");
+const mobileNav=document.getElementById("htMobileNav");
 
-window.addEventListener("scroll", () => {
+menuBtn.addEventListener("click",()=>{
 
-    if (window.scrollY > 80) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
+    mobileNav.classList.toggle("active");
 
 });
-
-
-
 
 window.addEventListener("scroll",()=>{
 
