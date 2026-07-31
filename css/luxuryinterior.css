@@ -849,3 +849,100 @@ FOOTER
 }
 
 }
+
+
+
+/*==============================
+INSTAGRAM CTA
+==============================*/
+
+.photo-instagram{
+
+    width:100%;
+    padding:140px 20px;
+    text-align:center;
+    background:#111;
+
+}
+
+.photo-instagram span{
+
+    display:block;
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    letter-spacing:5px;
+    color:#C79A46;
+    text-transform:uppercase;
+    margin-bottom:22px;
+
+}
+
+.photo-instagram h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:54px;
+    font-weight:400;
+    color:#F5F2EB;
+    margin-bottom:28px;
+
+}
+
+.photo-instagram p{
+
+    max-width:620px;
+    margin:0 auto 45px;
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.9;
+    color:rgba(245,242,235,.75);
+
+}
+
+.instagram-link{
+
+    display:inline-block;
+    text-decoration:none;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    letter-spacing:.15em;
+    color:#C79A46;
+    border-bottom:1px solid #C79A46;
+    padding-bottom:6px;
+    transition:.35s ease;
+
+}
+
+.instagram-link:hover{
+
+    color:#F5F2EB;
+    border-color:#F5F2EB;
+
+}
+
+@media(max-width:768px){
+
+.photo-instagram{
+
+    padding:90px 24px;
+
+}
+
+.photo-instagram h2{
+
+    font-size:36px;
+
+}
+
+.photo-instagram p{
+
+    font-size:15px;
+
+}
+
+.instagram-link{
+
+    font-size:14px;
+
+}
+
+}
