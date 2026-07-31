@@ -33,3 +33,13 @@ window.addEventListener("scroll", () => {
     }
 
 });
+
+
+
+
+window.addEventListener("scroll",()=>{
+
+    document.querySelector(".ht-navbar").classList.toggle("scrolled",window.scrollY>40);
+
+});
+</script>
