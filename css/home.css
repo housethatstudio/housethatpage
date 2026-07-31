@@ -74,7 +74,7 @@ body{
 
     font-size:15px;
 
-    color:#F5F2EB;
+     color:#000000;   /* Black */
 
     letter-spacing:5px;
 
@@ -100,8 +100,7 @@ body{
 
     font-family:Inter,sans-serif;
 
-    color:#F5F2EB;
-
+     color:#000000;   /* Black */
     text-decoration:none;
 
     font-size:13px;
@@ -123,7 +122,7 @@ body{
 
     height:1px;
 
-    background:#F5F2EB;
+   background:#000000;   /* Black underline */
 
     transition:.3s;
 }
