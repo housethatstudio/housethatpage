@@ -290,13 +290,16 @@ MOBILE MENU
 
     position:fixed;
 
-    top:0;
+    top:90px;
 
     left:-100%;
 
     width:290px;
 
-    height:100vh;
+       height:calc(100vh - 100px);
+border-radius:24px;
+         margin-left:3%;
+
 
     background:#fff;
 
@@ -358,19 +361,27 @@ RESPONSIVE
 
     .ht-navbar{
 
-        width:100%;
+        width:94%;
 
-        left:0;
+        top:18px;
 
-        top:0;
+        left:50%;
 
-        transform:none;
+        transform:translateX(-50%);
 
-        border-radius:0;
+        height:60px;
 
-        padding:0 22px;
+        padding:0 20px;
 
-        height:72px;
+        border-radius:50px;
+
+        background:rgba(255,255,255,.92);
+
+        backdrop-filter:blur(18px);
+
+        -webkit-backdrop-filter:blur(18px);
+
+        box-shadow:0 12px 35px rgba(0,0,0,.15);
 
     }
 
@@ -390,6 +401,15 @@ RESPONSIVE
 
         font-size:14px;
 
+        letter-spacing:.30em;
+
+    }
+
+    .ht-logo img{
+
+        width:28px;
+
     }
 
 }
+
