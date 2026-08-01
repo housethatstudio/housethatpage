@@ -276,6 +276,25 @@ FORM
 
 }
 
+
+/* Tablet (iPad) */
+@media (min-width:769px) and (max-width:1024px){
+
+    .career-content{
+        width:88%;
+    }
+
+    .career-form{
+        gap:24px;   /* Increase spacing between fields */
+    }
+
+    .career-form input,
+    .career-form select,
+    .career-form textarea{
+        padding:22px 24px;
+    }
+
+}
 /*=====================================
 BUTTON
 =====================================*/
