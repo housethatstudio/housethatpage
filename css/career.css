@@ -99,6 +99,29 @@ CAREER SECTION
 
 }
 
+@media (min-width:769px) and (max-width:1024px){
+
+    .career-section{
+        grid-template-columns:46% 54%;
+        gap:60px;
+    }
+
+    .career-content{
+        width:88%;
+    }
+
+    .career-form{
+        gap:24px;
+    }
+
+    .career-form input,
+    .career-form select,
+    .career-form textarea{
+        padding:22px 24px;
+    }
+
+}
+
 @media (max-width:768px){
 
     .career-section{
@@ -116,6 +139,21 @@ CAREER SECTION
     .career-right{
         grid-area:image;
         min-height:420px;
+    }
+
+    .career-content{
+        width:100%;
+        padding:50px 30px;
+    }
+
+    .career-form input,
+    .career-form select,
+    .career-form textarea{
+        padding:16px 18px;
+    }
+
+    .career-btn{
+        width:100%;
     }
 
 }
