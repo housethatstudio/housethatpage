@@ -380,10 +380,10 @@ MOBILE
 }
 
 
-@media (min-width:769px) and (max-width:1024px){
+@media (min-width:769px){
 
     .career-form{
-        margin-top:60px;
+        margin-top:80px;
     }
 
 }
