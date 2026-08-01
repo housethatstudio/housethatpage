@@ -30,6 +30,7 @@ CAREER SECTION
 
 }
 
+
 .career-left{
 
     background:#111111;
@@ -98,16 +99,13 @@ CAREER SECTION
 
 }
 
-@media (max-width:768px){
+@media (min-width:769px) and (max-width:1024px){
 
     .career-section{
-
-        grid-template-columns:1fr;
-        grid-template-areas:
-        "image"
-        "content";
-
+        gap:50px;   /* Increase to 40px, 50px, or 60px */
     }
+
+}
 
     .career-left{
 
@@ -277,24 +275,7 @@ FORM
 }
 
 
-/* Tablet (iPad) */
-@media (min-width:769px) and (max-width:1024px){
 
-    .career-content{
-        width:88%;
-    }
-
-    .career-form{
-        gap:24px;   /* Increase spacing between fields */
-    }
-
-    .career-form input,
-    .career-form select,
-    .career-form textarea{
-        padding:22px 24px;
-    }
-
-}
 /*=====================================
 BUTTON
 =====================================*/
