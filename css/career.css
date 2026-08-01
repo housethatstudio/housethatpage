@@ -123,6 +123,30 @@ CAREER SECTION
 
 }
 
+/* Tablet (iPad) */
+@media (min-width:769px) and (max-width:1024px){
+
+    .career-section{
+        grid-template-columns:46% 54%; /* optional */
+        gap:60px;                      /* Increase gap */
+    }
+
+    .career-content{
+        width:88%;
+    }
+
+    .career-form{
+        gap:24px;
+    }
+
+    .career-form input,
+    .career-form select,
+    .career-form textarea{
+        padding:22px 24px;
+    }
+
+}
+
 /*=====================================
 CAREER CONTENT
 =====================================*/
