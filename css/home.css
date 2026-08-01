@@ -964,3 +964,82 @@ FOOTER
     background:#222;
 
 }
+
+
+
+
+/*=====================================
+        FOLLOW SECTION
+======================================*/
+
+.follow-section{
+
+    padding:80px 24px;
+
+    text-align:center;
+
+}
+
+.follow-title{
+
+    display:block;
+
+    margin-bottom:35px;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    letter-spacing:6px;
+
+    color:#F5F2EB;
+
+}
+
+.follow-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.follow-icons a{
+
+    width:58px;
+
+    height:58px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:#F5F2EB;
+
+    font-size:22px;
+
+    transition:.35s ease;
+
+}
+
+.follow-icons a:hover{
+
+    color:#C79A46;
+
+    border-color:#C79A46;
+
+    transform:translateY(-5px);
+
+}
