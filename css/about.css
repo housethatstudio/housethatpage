@@ -389,7 +389,8 @@ FOUNDER
 
     width:100%;
 
-    min-height:55vh;
+     min-height:30vh;
+
 
     display:flex;
 
@@ -397,7 +398,7 @@ FOUNDER
 
     align-items:center;
 
-    padding:80px 24px;
+    padding:50px 24px;
 
     text-align:center;
 
