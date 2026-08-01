@@ -481,7 +481,27 @@ MOBILE NAVIGATION
 </section>
 
     
+<!--=====================================
+        SPOTLIGHT SEARCH
+======================================-->
 
+<section class="search-section">
+
+    <div class="search-trigger" id="openSearch">
+
+        <span class="search-icon">⌕</span>
+
+        <span class="search-text">
+            Search HouseThat...
+        </span>
+
+        <span class="search-shortcut">
+            Ctrl + K
+        </span>
+
+    </div>
+
+</section>
 
   
  
@@ -491,8 +511,6 @@ MOBILE NAVIGATION
      <section class="cta-section">
 
     <div class="cta-content">
-
-        <span>HOUSETHAT</span>
 
         <p>
             Let's Create Something Timeless
@@ -554,9 +572,29 @@ MOBILE NAVIGATION
     </div>
 
 </footer>
+    <!--=====================================
+        SEARCH MODAL
+======================================-->
+
+<div class="search-modal" id="searchModal">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search projects, services, pages..."
+        >
+
+        <div id="searchResults" class="search-results"></div>
+
+    </div>
+
+</div>
 
     <!-- JS files -->
     <script src="js/main.js"></script>
+     <script src="js/search.js"></script>
   
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
