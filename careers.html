@@ -259,11 +259,30 @@ JOIN HOUSETHAT
 
 </main>
 
+  <!--=====================================
+        SPOTLIGHT SEARCH
+======================================-->
+
+<section class="search-section">
+
+    <div class="search-trigger" id="openSearch">
+
+        <span class="search-icon">⌕</span>
+
+        <span class="search-text">
+            Search HouseThat...
+        </span>
+
+        <span class="search-shortcut">
+            Ctrl + K
+        </span>
+
+    </div>
+
+</section>
   <section class="cta-section">
 
     <div class="cta-content">
-
-        <span>HOUSETHAT</span>
 
         <p>Let's Create Something Timeless</p>
 
@@ -322,7 +341,29 @@ JOIN HOUSETHAT
     </div>
 
 </footer>
-  <script src="js/career.js"></script>
+  </main>
+  <!--=====================================
+        SEARCH MODAL
+======================================-->
+
+<div class="search-modal" id="searchModal">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search projects, services, pages..."
+        >
+
+        <div id="searchResults" class="search-results"></div>
+
+    </div>
+
+</div>
+ 
+   <script src="js/career.js"></script>
+   <script src="js/search.js"></script>
 </body>
 </html>
 </body>
