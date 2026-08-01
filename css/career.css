@@ -99,50 +99,23 @@ CAREER SECTION
 
 }
 
-@media (min-width:769px) and (max-width:1024px){
+@media (max-width:768px){
 
     .career-section{
-        gap:50px;   /* Increase to 40px, 50px, or 60px */
+        grid-template-columns:1fr;
+        grid-template-areas:
+            "image"
+            "content";
     }
 
-}
-
     .career-left{
-
         grid-area:content;
         padding:50px 30px;
-
     }
 
     .career-right{
-
         grid-area:image;
         min-height:420px;
-
-    }
-
-}
-
-/* Tablet (iPad) */
-@media (min-width:769px) and (max-width:1024px){
-
-    .career-section{
-        grid-template-columns:46% 54%; /* optional */
-        gap:60px;                      /* Increase gap */
-    }
-
-    .career-content{
-        width:88%;
-    }
-
-    .career-form{
-        gap:24px;
-    }
-
-    .career-form input,
-    .career-form select,
-    .career-form textarea{
-        padding:22px 24px;
     }
 
 }
