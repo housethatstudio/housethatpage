@@ -376,21 +376,19 @@ body{
 
     width:100%;
 
-    min-height:55vh;
-
     display:flex;
 
     justify-content:center;
 
     align-items:center;
 
-    padding:20px 24px 80px;
-
+    padding:20px 24px 40px;
     text-align:center;
 
     box-sizing:border-box;
 
 }
+
 
 .cta-content{
 
@@ -805,7 +803,8 @@ FOOTER
 
 .search-section{
 
-    padding:80px 24px 40px;
+   
+    padding:60px 24px 20px;
 
 }
 
@@ -974,7 +973,7 @@ FOOTER
 
 .follow-section{
 
-    padding:80px 24px;
+    padding:40px 24px 60px;
 
     text-align:center;
 
