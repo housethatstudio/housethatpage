@@ -1,6 +1,8 @@
 const data = [
-
+{title:"Home",url:"index.html"},
 {title:"About",url:"about.html"},
+{title:"Services",url:"services.html"},
+{title:"Projects",url:"projects.html"},
 {title:"Recognition",url:"awards.html"},
 {title:"Products",url:"products.html"},
 {title:"Careers",url:"careers.html"},
