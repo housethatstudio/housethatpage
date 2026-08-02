@@ -274,6 +274,171 @@ OUR PHILOSOPHY
 }
 
 }
+
+/*=====================================
+OUR EXPERTISE
+======================================*/
+
+.about-expertise{
+
+    display:grid;
+    grid-template-columns:50% 50%;
+
+    min-height:100vh;
+
+    background:#111111;
+
+    align-items:center;
+
+}
+
+.about-expertise-image{
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.about-expertise-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.about-expertise-content{
+
+    padding:0 8%;
+
+}
+
+.about-expertise-content h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    color:#F5F2EB;
+
+    margin:25px 0 35px;
+
+}
+
+.about-expertise-content p{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    opacity:.9;
+
+    margin-bottom:45px;
+
+}
+
+.expertise-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px 35px;
+
+}
+
+.expertise-grid span{
+
+    color:#F5F2EB;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+@media(max-width:1024px){
+
+.about-expertise{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.about-expertise-image{
+
+    order:1;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.about-expertise-image img{
+
+    width:100%;
+
+    height:auto;
+
+    object-fit:contain;
+
+}
+
+.about-expertise-content{
+
+    order:2;
+
+    width:100%;
+
+    padding:60px 35px;
+
+}
+
+.about-expertise-content h2{
+
+    font-size:30px;
+
+}
+
+.expertise-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-expertise-content{
+
+    padding:40px 25px;
+
+}
+
+.about-expertise-content h2{
+
+    font-size:28px;
+
+}
+
+}
 /* ===========================
    CTA
 =========================== */
