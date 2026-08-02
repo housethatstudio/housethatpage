@@ -1,3 +1,18 @@
+.founder-intro .section-label,
+.her-journey .section-label,
+.beyond-design .section-label,
+.recognition .section-label,
+.about-founder .section-label{
+
+    color:#C79A46 !important;
+     font-family:'Inter',sans-serif;
+
+
+}
+
+
+
+
 /*=====================================
 FOUNDER INTRO
 ======================================*/
