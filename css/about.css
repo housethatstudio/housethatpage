@@ -13,7 +13,7 @@ body{
     display:grid;
     grid-template-columns:50% 50%;
     align-items:center;
-
+     padding-top:110px;   /* Adjust according to navbar height */
     width:100%;
     min-height:100vh;
 
