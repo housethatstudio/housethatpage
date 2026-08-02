@@ -462,6 +462,7 @@ BEYOND DESIGN
 
     display:grid;
     grid-template-columns:50% 50%;
+    grid-template-areas:"content image";
 
     width:100%;
     min-height:100vh;
@@ -473,18 +474,16 @@ BEYOND DESIGN
 }
 
 .founder-values-content{
-
+    grid-area:content;
     padding:0 8%;
-
 }
 
 .founder-values-image{
+    grid-area:image;
 
     width:100%;
     height:100vh;
-
     overflow:hidden;
-
 }
 
 .founder-values-image img{
@@ -536,10 +535,15 @@ BEYOND DESIGN
 }
 
 .founder-values-image{
-
+    order:1;
     width:100%;
     height:auto;
+}
 
+.founder-values-content{
+    order:2;
+    width:100%;
+    padding:50px 30px;
 }
 
 .founder-values-image img{
@@ -551,13 +555,6 @@ BEYOND DESIGN
 
 }
 
-.founder-values-content{
-
-    width:100%;
-
-    padding:50px 30px;
-
-}
 
 .founder-values-content h2{
 
