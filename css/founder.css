@@ -67,7 +67,7 @@ FOUNDER INTRO
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:60px;
+    font-size:40px;
 
     font-weight:500;
 
@@ -208,7 +208,7 @@ FOUNDER STORY
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:52px;
+    font-size:40px;
 
     font-weight:500;
 
@@ -348,7 +348,7 @@ DESIGN PHILOSOPHY
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:52px;
+    font-size:40px;
 
     font-weight:500;
 
@@ -362,7 +362,7 @@ DESIGN PHILOSOPHY
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:30px;
+    font-size:40px;
 
     font-style:italic;
 
@@ -503,7 +503,7 @@ BEYOND DESIGN
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:52px;
+    font-size:40px;
 
     color:#F5F2EB;
 
@@ -576,6 +576,135 @@ BEYOND DESIGN
 }
 
 .founder-values-content h2{
+
+    font-size:32px;
+
+}
+
+}
+
+/*=====================================
+RECOGNITION
+======================================*/
+
+.founder-recognition{
+
+    display:grid;
+    grid-template-columns:50% 50%;
+
+    width:100%;
+    min-height:100vh;
+
+    align-items:center;
+
+    background:#111111;
+
+}
+
+.founder-recognition-image{
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.founder-recognition-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+    object-position:center;
+
+    display:block;
+
+}
+
+.founder-recognition-content{
+
+    padding:0 8%;
+
+}
+
+.founder-recognition-content h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:40px;
+
+    color:#F5F2EB;
+
+    font-weight:500;
+
+    margin:25px 0 35px;
+
+}
+
+.founder-recognition-content p{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    opacity:.9;
+
+}
+@media(max-width:1024px){
+
+.founder-recognition{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.founder-recognition-image{
+
+    width:100%;
+    height:auto;
+
+}
+
+.founder-recognition-image img{
+
+    width:100%;
+    height:auto;
+
+    object-fit:contain;
+
+}
+
+.founder-recognition-content{
+
+    width:100%;
+
+    padding:50px 30px;
+
+}
+
+.founder-recognition-content h2{
+
+    font-size:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.founder-recognition-content{
+
+    padding:40px 25px;
+
+}
+
+.founder-recognition-content h2{
 
     font-size:32px;
 
