@@ -586,6 +586,173 @@ OUR JOURNEY
 }
 
 }
+
+/*=====================================
+RECOGNITION
+======================================*/
+
+.about-recognition{
+
+    display:grid;
+    grid-template-columns:50% 50%;
+
+    min-height:100vh;
+
+    background:#111111;
+
+    align-items:center;
+
+}
+
+.about-recognition-image{
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.about-recognition-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.about-recognition-content{
+
+    padding:0 8%;
+
+}
+
+.about-recognition-content h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    font-weight:400;
+
+    color:#F5F2EB;
+
+    margin:25px 0 40px;
+
+}
+
+.about-recognition-content p{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    opacity:.9;
+
+}
+
+.recognition-list{
+
+    margin-top:45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+.recognition-item{
+
+    padding-bottom:24px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.recognition-item h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    color:#C79A46;
+
+    margin-bottom:10px;
+
+}
+
+@media(max-width:1024px){
+
+.about-recognition{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.about-recognition-image{
+
+    order:1;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.about-recognition-image img{
+
+    width:100%;
+
+    height:auto;
+
+    object-fit:contain;
+
+}
+
+.about-recognition-content{
+
+    order:2;
+
+    width:100%;
+
+    padding:60px 35px;
+
+}
+
+.about-recognition-content h2{
+
+    font-size:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-recognition-content{
+
+    padding:40px 25px;
+
+}
+
+.about-recognition-content h2{
+
+    font-size:28px;
+
+}
+
+}
 /* ===========================
    CTA
 =========================== */
