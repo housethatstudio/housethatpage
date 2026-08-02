@@ -1,15 +1,27 @@
-.founder-intro .section-label,
-.her-journey .section-label,
-.beyond-design .section-label,
-.recognition .section-label,
-.about-founder .section-label{
+/* Force all section headings to gold */
 
+.section-label,
+.section-title,
+.section-subtitle,
+.her-journey h6,
+.her-journey h5,
+.her-journey span,
+.founder-philosophy h6,
+.founder-philosophy h5,
+.founder-philosophy span,
+.founder-values h6,
+.founder-values h5,
+.founder-values span,
+.founder-recognition h6,
+.founder-recognition h5,
+.founder-recognition span{
     color:#C79A46 !important;
-     font-family:'Inter',sans-serif;
-
-
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:400;
 }
-
 
 
 
