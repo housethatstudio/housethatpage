@@ -8,6 +8,15 @@ body{
     overflow-x:hidden;
 
 }
+.about-story .section-label,
+.about-philosophy .section-label,
+.about-expertise .section-label,
+.about-journey .section-label,
+.about-recognition .section-label{
+
+    color:#C79A46 !important;
+
+}
 .about-story{
 
     display:grid;
