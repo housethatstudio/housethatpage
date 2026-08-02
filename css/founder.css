@@ -162,8 +162,9 @@ FOUNDER INTRO
 
     width:100%;
 
-     min-height:30vh;
+    background:#111111;
 
+    min-height:30vh;
 
     display:flex;
 
@@ -421,9 +422,13 @@ FOOTER
 
 .search-section{
 
+    background:#111111;
+
     padding:80px 24px 40px;
 
 }
+
+and
 
 .search-trigger{
 
