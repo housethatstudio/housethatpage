@@ -52,9 +52,12 @@ body{
 
 .hero-content{
     position:absolute;
+
     left:60px;
-    top:50%;
-    transform:translateY(-50%);
+
+    bottom:60px;
+
+    z-index:2;
 }
 .hero-location{
     font-family:Inter,sans-serif;
@@ -123,12 +126,7 @@ body{
 }
 
 @media(max-width:768px){
-    .hero-content{
-    left:30px;
-    right:30px;
-    bottom:40px;
-    width:auto;
-}
+   
 
 .hero-title{
 
