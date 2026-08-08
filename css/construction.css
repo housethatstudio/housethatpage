@@ -28,6 +28,32 @@ body {
 .construction-number {
     color: #ffffff;
 }
+
+/* ALL CONSTRUCTION NUMBERS + HEADINGS */
+.construction-number,
+.construction-content h2 {
+    color: #c9a45c;
+}
+
+/* ALL DESCRIPTIONS */
+.construction-content p {
+    color: #ffffff;
+}
+
+/* INTRO HEADING */
+.construction-intro h1 {
+    color: #c9a45c;
+}
+
+/* INTRO EYEBROW */
+.construction-eyebrow {
+    color: #c9a45c;
+}
+
+/* INTRO DESCRIPTION */
+.construction-intro-text {
+    color: #ffffff;
+}
 /* =========================================
    MAIN PAGE
    ========================================= */
