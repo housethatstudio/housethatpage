@@ -54,359 +54,169 @@ body {
 .construction-intro-text {
     color: #ffffff;
 }
-/* =========================================
-   MAIN PAGE
-   ========================================= */
 
-.construction-page {
-    width: 100%;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+/* =================================
+   CONSTRUCTION PAGE
+================================= */
 
-
-/* =========================================
-   INTRO
-   ========================================= */
-
-.construction-intro {
-    width: min(1100px, 88%);
-    margin: 0 auto 120px;
-    text-align: center;
-}
-
-.construction-eyebrow {
-    margin: 0 0 18px;
-
+body {
+    margin: 0;
+    background: #111111;
+    color: #ffffff;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
 }
 
-.construction-intro h1 {
-    margin: 0 0 22px;
 
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+/* =================================
+   PROJECT
+================================= */
 
-    line-height: 1.4;
-}
-
-.construction-intro-text {
-    max-width: 620px;
+.construction-project {
+    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
-
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   CONSTRUCTION ITEMS
-   ========================================= */
-
-.construction-item {
-    width: min(1400px, 92%);
-    margin: 0 auto 120px;
+    padding: 140px 0;
 
     display: grid;
-    grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
-
+    grid-template-columns: 0.75fr 1.25fr;
     align-items: center;
     gap: 90px;
 }
 
 
-/* =========================================
-   ALTERNATING LAYOUT
-   ========================================= */
+/* =================================
+   IMAGE
+================================= */
 
-/* Image LEFT / Text RIGHT */
-
-.construction-item.reverse {
-    grid-template-columns: minmax(280px, 0.6fr) minmax(0, 1.4fr);
-}
-
-.construction-item.reverse .construction-image {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.construction-item.reverse .construction-content {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-
-/* =========================================
-   IMAGES
-   ========================================= */
-
-.construction-image {
+.construction-project-image {
     width: 100%;
-    overflow: hidden;
 }
 
-.construction-image img {
+.construction-project-image img {
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-}
-
-.construction-image:hover img {
-    transform: scale(1.02);
 }
 
 
-/* =========================================
-   TEXT
-   ========================================= */
+/* =================================
+   PROJECT INFORMATION
+================================= */
 
-.construction-content {
-    max-width: 430px;
+.construction-project-info {
+    max-width: 450px;
 }
 
-.construction-number {
+.project-number {
     display: block;
-
     margin-bottom: 18px;
 
-    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
-
-    letter-spacing: 0.15em;
+    color: #c9a45c;
+    letter-spacing: 2px;
 }
 
-.construction-content h2 {
-    margin: 0 0 18px;
+.construction-project-info h2 {
+    margin: 0 0 12px;
 
-    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 500;
-
-    line-height: 1.5;
+    color: #c9a45c;
 }
 
-.construction-content p {
-    margin: 0;
+.project-location {
+    margin: 0 0 8px;
 
-    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
+    color: #ffffff;
+}
 
+.project-possession {
+    margin: 0 0 28px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.project-description {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 400;
     line-height: 1.8;
+    color: #ffffff;
 }
 
 
-/* =========================================
-   LAPTOP
-   ========================================= */
-
-@media (max-width: 1200px) {
-
-    .construction-page {
-        padding-top: 110px;
-        padding-bottom: 100px;
-    }
-
-    .construction-intro {
-        margin-bottom: 100px;
-    }
-
-    .construction-item {
-        width: 90%;
-        gap: 65px;
-        margin-bottom: 100px;
-    }
-
-    .construction-content {
-        max-width: 390px;
-    }
-
-}
-
-
-/* =========================================
+/* =================================
    TABLET
-   ========================================= */
+================================= */
 
 @media (max-width: 900px) {
 
-    .construction-page {
-        padding-top: 100px;
-        padding-bottom: 80px;
-    }
-
-    .construction-intro {
-        width: 86%;
-        margin-bottom: 80px;
-    }
-
-    .construction-item,
-    .construction-item.reverse {
+    .construction-project {
         width: 88%;
-
-        grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr);
-
+        grid-template-columns: 1fr 1fr;
         gap: 45px;
-
-        margin-bottom: 85px;
+        padding: 100px 0;
     }
 
-    /* Keep alternating order on tablet */
-
-    .construction-item.reverse .construction-image {
-        grid-column: 2;
-        grid-row: 1;
+    .construction-project-info {
+        max-width: 100%;
     }
 
-    .construction-item.reverse .construction-content {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .construction-content {
-        max-width: 330px;
-    }
-
-   .construction-image img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
 }
 
 
-/* =========================================
+/* =================================
    MOBILE
-   ========================================= */
+================================= */
 
 @media (max-width: 600px) {
 
-    .construction-page {
-        padding-top: 90px;
-        padding-bottom: 60px;
-    }
-
-
-    /* INTRO */
-
-    .construction-intro {
-        width: 86%;
-        margin-bottom: 65px;
-    }
-
-    .construction-eyebrow {
-        font-size: 14px;
-        letter-spacing: 0.20em;
-        margin-bottom: 14px;
-    }
-
-    .construction-intro h1 {
-        font-size: 16px;
-        margin-bottom: 16px;
-    }
-
-    .construction-intro-text {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-
-    /* ITEMS */
-
-    .construction-item,
-    .construction-item.reverse {
+    .construction-project {
         width: 88%;
+        padding: 80px 0;
 
         display: flex;
         flex-direction: column;
 
-        gap: 24px;
-
-        margin-bottom: 70px;
+        gap: 28px;
     }
 
-
-    /* IMAGE ALWAYS FIRST */
-
-    .construction-item .construction-image,
-    .construction-item.reverse .construction-image {
+    /* Image first */
+    .construction-project-image {
         order: 1;
-
-        width: 100%;
     }
 
-
-    /* TEXT ALWAYS BELOW IMAGE */
-
-    .construction-item .construction-content,
-    .construction-item.reverse .construction-content {
+    /* Writeup below image */
+    .construction-project-info {
         order: 2;
-
         width: 100%;
         max-width: none;
     }
 
-
-    /* IMAGE */
-
-   .construction-image img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-
-    /* TEXT */
-
-    .construction-number {
+    .project-number {
         font-size: 13px;
         margin-bottom: 12px;
     }
 
-    .construction-content h2 {
+    .construction-project-info h2 {
         font-size: 16px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
-    .construction-content p {
+    .project-location,
+    .project-possession,
+    .project-description {
         font-size: 14px;
+    }
+
+    .project-description {
         line-height: 1.75;
-    }
-
-}
-
-
-/* =========================================
-   SMALL MOBILE
-   ========================================= */
-
-@media (max-width: 380px) {
-
-    .construction-page {
-        padding-top: 80px;
-    }
-
-    .construction-intro,
-    .construction-item {
-        width: 90%;
-    }
-
-    .construction-item,
-    .construction-item.reverse {
-        margin-bottom: 60px;
-        gap: 20px;
     }
 
 }
