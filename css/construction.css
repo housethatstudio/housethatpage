@@ -615,6 +615,144 @@ body {
     }
 
 }
+
+/* =========================================
+   WHY DESIGN-LED CONSTRUCTION
+========================================= */
+
+.why-design-led {
+    width: 100%;
+    padding: 150px 7%;
+
+    background: #111111;
+    color: #ffffff;
+
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+
+    gap: 80px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.why-design-label span {
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #C79A46;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.why-design-content {
+    max-width: 850px;
+}
+
+.why-design-content h2 {
+    margin: 0 0 55px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    color: #C79A46;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.why-design-text {
+    max-width: 650px;
+}
+
+.why-design-text p {
+    margin: 0 0 28px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.9;
+
+    color: #ffffff;
+}
+
+.why-design-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .why-design-led {
+        padding: 110px 6%;
+
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .why-design-content {
+        max-width: 750px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .why-design-led {
+        padding: 90px 7% 100px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .why-design-label span {
+        font-size: 12px;
+        letter-spacing: 2.5px;
+    }
+
+    .why-design-content h2 {
+        font-size: 16px;
+        line-height: 1.6;
+
+        margin-bottom: 35px;
+    }
+
+    .why-design-text p {
+        font-size: 14px;
+        line-height: 1.8;
+
+        margin-bottom: 24px;
+    }
+
+}
 /* ===========================
    CTA
 =========================== */
