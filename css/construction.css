@@ -263,6 +263,29 @@ body {
 }
 
 
+/* =========================================
+   PROJECT 04
+   DESKTOP — IMAGE LEFT | WRITEUP RIGHT
+========================================= */
+
+@media screen and (min-width: 769px) {
+
+    .construction-project.project-04 {
+        grid-template-columns: 1.25fr 0.75fr;
+    }
+
+    .construction-project.project-04 .construction-project-image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .construction-project.project-04 .construction-project-info {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+}
+
 /* ===========================
    CTA
 =========================== */
