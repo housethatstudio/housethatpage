@@ -49,6 +49,19 @@ body {
     gap: 90px;
 }
 
+/* Desktop:
+   WRITEUP LEFT | IMAGE RIGHT
+*/
+
+.construction-project-info {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.construction-project-image {
+    grid-column: 2;
+    grid-row: 1;
+}
 
 /* ================================
    CONSTRUCTION PROJECT DETAILS
@@ -150,47 +163,6 @@ body {
 /* ================================
    MOBILE
    ================================ */
-
-@media (max-width: 600px) {
-
-    .construction-project-info {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .construction-project-info h2 {
-        font-size: 22px;
-        margin-bottom: 32px;
-    }
-
-    .project-meta {
-        display: block;
-        margin-bottom: 32px;
-    }
-
-    .project-meta-item {
-        margin-bottom: 25px;
-    }
-
-    .project-meta-item span {
-        font-size: 11px;
-        letter-spacing: 4px;
-        margin-bottom: 8px;
-    }
-
-    .project-meta-item p {
-        font-size: 15px;
-    }
-
-    .project-details {
-        max-width: 100%;
-    }
-
-    .project-details p {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-}
 
 
 /* =========================================
