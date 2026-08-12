@@ -436,6 +436,185 @@ body {
 
 }
 
+
+/* =========================================
+   WHAT WE BUILD
+========================================= */
+
+.what-we-build {
+    width: 100%;
+    padding: 140px 7% 150px;
+
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.what-we-build-header {
+    margin-bottom: 80px;
+}
+
+.what-we-build-header span {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #C79A46;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.build-services {
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/* =========================================
+   SERVICE ITEM
+========================================= */
+
+.build-service {
+    padding: 35px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.build-service:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.build-service-title {
+    display: flex;
+    align-items: baseline;
+
+    gap: 35px;
+}
+
+.build-service-title > span {
+    flex-shrink: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    color: #C79A46;
+}
+
+.build-service-title h2 {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    color: #C79A46;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.build-service p {
+    margin: 15px 0 0 48px;
+
+    max-width: 650px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .what-we-build {
+        padding: 110px 6% 120px;
+    }
+
+    .what-we-build-header {
+        margin-bottom: 60px;
+    }
+
+    .build-service {
+        padding: 30px 0;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .what-we-build {
+        padding: 90px 7% 100px;
+    }
+
+    .what-we-build-header {
+        margin-bottom: 50px;
+    }
+
+    .what-we-build-header span {
+        font-size: 14px;
+        letter-spacing: 2.5px;
+    }
+
+    .build-service {
+        padding: 28px 0;
+    }
+
+    .build-service-title {
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .build-service-title > span {
+        font-size: 12px;
+    }
+
+    .build-service-title h2 {
+        font-size: 16px;
+        line-height: 1.45;
+    }
+
+    .build-service p {
+        margin: 12px 0 0 32px;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
 /* ===========================
    CTA
 =========================== */
