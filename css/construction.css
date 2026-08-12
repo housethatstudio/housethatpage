@@ -193,6 +193,42 @@ body {
 }
 
 
+/* =========================================
+   MOBILE — IMAGE ABOVE WRITEUP
+========================================= */
+
+@media (max-width: 600px) {
+
+    .construction-project {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 88%;
+        margin: 0 auto;
+        padding: 80px 0;
+        gap: 30px;
+    }
+
+    .construction-project-image {
+        order: 1 !important;
+        width: 100%;
+    }
+
+    .construction-project-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: contain;
+    }
+
+    .construction-project-info {
+        order: 2 !important;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+}
 
 
 
