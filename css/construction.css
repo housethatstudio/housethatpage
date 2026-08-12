@@ -286,6 +286,156 @@ body {
 
 }
 
+/* =========================================
+   ONE PROJECT — 4 PHOTOS
+========================================= */
+
+.project-four-photos {
+    width: 100%;
+    padding: 120px 0 0;
+    background: #111111;
+}
+
+
+/* =========================================
+   2 × 2 IMAGE GRID
+========================================= */
+
+.four-project-images {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0;
+}
+
+.four-project-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.four-project-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 0;
+}
+
+
+/* =========================================
+   PROJECT INFORMATION
+========================================= */
+
+.four-project-info {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 70px 0 120px;
+}
+
+.four-project-info .project-number {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    color: #C79A46;
+}
+
+.four-project-info h2 {
+    margin: 0 0 40px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #C79A46;
+}
+
+.four-project-location span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #C79A46;
+}
+
+.four-project-location p {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    color: #FFFFFF;
+}
+
+.four-project-description {
+    max-width: 600px;
+
+    margin-top: 35px;
+}
+
+.four-project-description p {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .project-four-photos {
+        padding-top: 70px;
+    }
+
+    .four-project-images {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        gap: 0;
+    }
+
+    .four-project-image {
+        width: 100%;
+    }
+
+    .four-project-image img {
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+    }
+
+    .four-project-info {
+        width: 88%;
+
+        padding: 45px 0 80px;
+    }
+
+}
+
 /* ===========================
    CTA
 =========================== */
