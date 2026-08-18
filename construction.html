@@ -919,147 +919,203 @@ MOBILE NAVIGATION
 
     <!-- JS files -->
 
-    <script>
+   <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-    const project = document.querySelector(".project-01");
-
-    if (!project) return;
-
-    const slides = project.querySelectorAll(".construction-slide");
-    const dots = project.querySelectorAll(".construction-dot");
-
-    const previousButton =
-        project.querySelector(".construction-prev");
-
-    const nextButton =
-        project.querySelector(".construction-next");
-
-    let currentSlide = 0;
-
-
-    /* =========================================
-       SHOW SLIDE
-    ========================================= */
-
-    function showSlide(index) {
-
-        if (index < 0) {
-            index = slides.length - 1;
-        }
-
-        if (index >= slides.length) {
-            index = 0;
-        }
-
-        slides.forEach(function (slide) {
-            slide.classList.remove("active");
-        });
-
-        dots.forEach(function (dot) {
-            dot.classList.remove("active");
-        });
-
-        slides[index].classList.add("active");
-
-        if (dots[index]) {
-            dots[index].classList.add("active");
-        }
-
-        currentSlide = index;
-    }
-
-
-    /* =========================================
-       NEXT
-    ========================================= */
-
-    if (nextButton) {
-
-        nextButton.addEventListener("click", function () {
-            showSlide(currentSlide + 1);
-        });
-
-    }
-
-
-    /* =========================================
-       PREVIOUS
-    ========================================= */
-
-    if (previousButton) {
-
-        previousButton.addEventListener("click", function () {
-            showSlide(currentSlide - 1);
-        });
-
-    }
-
-
-    /* =========================================
-       DOT NAVIGATION
-    ========================================= */
-
-    dots.forEach(function (dot, index) {
-
-        dot.addEventListener("click", function () {
-            showSlide(index);
-        });
-
-    });
-
-
-    /* =========================================
-       SWIPE SUPPORT — MOBILE
-    ========================================= */
-
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    const slider = project.querySelector(
-        ".construction-project-slider"
+    const projects = document.querySelectorAll(
+        ".construction-project"
     );
 
-    if (slider) {
 
-        slider.addEventListener("touchstart", function (event) {
+    projects.forEach(function (project) {
 
-            touchStartX = event.changedTouches[0].screenX;
+        const slides = project.querySelectorAll(
+            ".construction-slide"
+        );
 
-        }, { passive: true });
+        const dots = project.querySelectorAll(
+            ".construction-dot"
+        );
+
+        const previousButton = project.querySelector(
+            ".construction-prev"
+        );
+
+        const nextButton = project.querySelector(
+            ".construction-next"
+        );
+
+        const slider = project.querySelector(
+            ".construction-project-slider"
+        );
 
 
-        slider.addEventListener("touchend", function (event) {
-
-            touchEndX = event.changedTouches[0].screenX;
-
-            const swipeDistance =
-                touchEndX - touchStartX;
+        if (!slides.length) return;
 
 
-            /* Swipe left → next */
+        let currentSlide = 0;
 
-            if (swipeDistance < -50) {
-                showSlide(currentSlide + 1);
+
+        /* =========================================
+           SHOW SLIDE
+        ========================================= */
+
+        function showSlide(index) {
+
+            if (index < 0) {
+                index = slides.length - 1;
+            }
+
+            if (index >= slides.length) {
+                index = 0;
             }
 
 
-            /* Swipe right → previous */
+            slides.forEach(function (slide) {
 
-            if (swipeDistance > 50) {
-                showSlide(currentSlide - 1);
+                slide.classList.remove("active");
+
+            });
+
+
+            dots.forEach(function (dot) {
+
+                dot.classList.remove("active");
+
+            });
+
+
+            slides[index].classList.add("active");
+
+
+            if (dots[index]) {
+
+                dots[index].classList.add("active");
+
             }
 
-        }, { passive: true });
 
-    }
+            currentSlide = index;
+
+        }
 
 
-    /* =========================================
-       INITIAL SLIDE
-    ========================================= */
+        /* =========================================
+           NEXT
+        ========================================= */
 
-    showSlide(0);
+        if (nextButton) {
+
+            nextButton.addEventListener(
+                "click",
+                function () {
+
+                    showSlide(currentSlide + 1);
+
+                }
+            );
+
+        }
+
+
+        /* =========================================
+           PREVIOUS
+        ========================================= */
+
+        if (previousButton) {
+
+            previousButton.addEventListener(
+                "click",
+                function () {
+
+                    showSlide(currentSlide - 1);
+
+                }
+            );
+
+        }
+
+
+        /* =========================================
+           DOTS
+        ========================================= */
+
+        dots.forEach(function (dot, index) {
+
+            dot.addEventListener(
+                "click",
+                function () {
+
+                    showSlide(index);
+
+                }
+            );
+
+        });
+
+
+        /* =========================================
+           MOBILE SWIPE
+        ========================================= */
+
+        let touchStartX = 0;
+
+        let touchEndX = 0;
+
+
+        if (slider) {
+
+            slider.addEventListener(
+                "touchstart",
+                function (event) {
+
+                    touchStartX =
+                        event.changedTouches[0].screenX;
+
+                },
+                { passive: true }
+            );
+
+
+            slider.addEventListener(
+                "touchend",
+                function (event) {
+
+                    touchEndX =
+                        event.changedTouches[0].screenX;
+
+
+                    const distance =
+                        touchEndX - touchStartX;
+
+
+                    if (distance < -50) {
+
+                        showSlide(currentSlide + 1);
+
+                    }
+
+
+                    if (distance > 50) {
+
+                        showSlide(currentSlide - 1);
+
+                    }
+
+                },
+                { passive: true }
+            );
+
+        }
+
+
+        /* =========================================
+           INITIAL SLIDE
+        ========================================= */
+
+        showSlide(0);
+
+    });
 
 });
 </script>
