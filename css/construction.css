@@ -2066,3 +2066,52 @@ INSTAGRAM CTA
     }
 
 }
+
+
+
+/* =========================================
+   ALTERNATING PROJECT LAYOUT
+========================================= */
+
+.reverse-project {
+    grid-template-columns: 1.25fr 0.75fr;
+}
+
+
+/* Move slider to LEFT */
+
+.reverse-project .construction-project-slider {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+/* Move information to RIGHT */
+
+.reverse-project .construction-project-info {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+/* =========================================
+   MOBILE
+   ALWAYS SLIDER FIRST
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .reverse-project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse-project .construction-project-slider {
+        order: 1;
+    }
+
+    .reverse-project .construction-project-info {
+        order: 2;
+    }
+
+}
