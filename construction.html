@@ -879,46 +879,88 @@ MOBILE NAVIGATION
 
     <!-- JS files -->
 
-   <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
 
-    const projects = document.querySelectorAll(
-        ".construction-project"
-    );
-
+    const projects = document.querySelectorAll(".construction-project");
 
     projects.forEach(function (project) {
 
-        const slides = project.querySelectorAll(
-            ".construction-slide"
-        );
+        const slides = project.querySelectorAll(".construction-slide");
+        const slider = project.querySelector(".construction-project-slider");
 
-        const dots = project.querySelectorAll(
-            ".construction-dot"
-        );
+        if (!slides.length || !slider) return;
 
-        const previousButton = project.querySelector(
-            ".construction-prev"
-        );
+        /* =========================================
+           REMOVE DUPLICATE ARROWS
+        ========================================= */
 
-        const nextButton = project.querySelector(
-            ".construction-next"
-        );
+        const prevButtons = project.querySelectorAll(".construction-prev");
+        const nextButtons = project.querySelectorAll(".construction-next");
 
-        const slider = project.querySelector(
-            ".construction-project-slider"
-        );
+        prevButtons.forEach(function (button, index) {
+            if (index > 0) {
+                button.remove();
+            }
+        });
 
-
-        if (!slides.length) return;
-
-
-        let currentSlide = 0;
+        nextButtons.forEach(function (button, index) {
+            if (index > 0) {
+                button.remove();
+            }
+        });
 
 
         /* =========================================
-           SHOW SLIDE
+           GET SINGLE ARROWS
         ========================================= */
+
+        const previousButton = project.querySelector(".construction-prev");
+        const nextButton = project.querySelector(".construction-next");
+
+
+        /* =========================================
+           DOTS
+        ========================================= */
+
+        let dotsContainer = project.querySelector(".construction-slider-dots");
+
+        if (!dotsContainer) {
+            dotsContainer = document.createElement("div");
+            dotsContainer.className = "construction-slider-dots";
+            slider.appendChild(dotsContainer);
+        }
+
+        /* Remove old dots */
+        dotsContainer.innerHTML = "";
+
+
+        /* Create correct number of dots */
+        slides.forEach(function (slide, index) {
+
+            const dot = document.createElement("button");
+
+            dot.type = "button";
+            dot.className = "construction-dot";
+
+            if (index === 0) {
+                dot.classList.add("active");
+            }
+
+            dotsContainer.appendChild(dot);
+
+        });
+
+
+        const dots = dotsContainer.querySelectorAll(".construction-dot");
+
+
+        /* =========================================
+           SLIDER
+        ========================================= */
+
+        let currentSlide = 0;
+
 
         function showSlide(index) {
 
@@ -932,16 +974,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             slides.forEach(function (slide) {
-
                 slide.classList.remove("active");
-
             });
 
 
             dots.forEach(function (dot) {
-
                 dot.classList.remove("active");
-
             });
 
 
@@ -949,9 +987,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             if (dots[index]) {
-
                 dots[index].classList.add("active");
-
             }
 
 
@@ -961,55 +997,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         /* =========================================
-           NEXT
+           NEXT BUTTON
         ========================================= */
 
         if (nextButton) {
 
-            nextButton.addEventListener(
-                "click",
-                function () {
+            nextButton.addEventListener("click", function () {
 
-                    showSlide(currentSlide + 1);
+                showSlide(currentSlide + 1);
 
-                }
-            );
+            });
 
         }
 
 
         /* =========================================
-           PREVIOUS
+           PREVIOUS BUTTON
         ========================================= */
 
         if (previousButton) {
 
-            previousButton.addEventListener(
-                "click",
-                function () {
+            previousButton.addEventListener("click", function () {
 
-                    showSlide(currentSlide - 1);
+                showSlide(currentSlide - 1);
 
-                }
-            );
+            });
 
         }
 
 
         /* =========================================
-           DOTS
+           DOT CLICK
         ========================================= */
 
         dots.forEach(function (dot, index) {
 
-            dot.addEventListener(
-                "click",
-                function () {
+            dot.addEventListener("click", function () {
 
-                    showSlide(index);
+                showSlide(index);
 
-                }
-            );
+            });
 
         });
 
@@ -1019,58 +1046,52 @@ document.addEventListener("DOMContentLoaded", function () {
         ========================================= */
 
         let touchStartX = 0;
-
         let touchEndX = 0;
 
 
-        if (slider) {
+        slider.addEventListener(
+            "touchstart",
+            function (event) {
 
-            slider.addEventListener(
-                "touchstart",
-                function (event) {
+                touchStartX =
+                    event.changedTouches[0].screenX;
 
-                    touchStartX =
-                        event.changedTouches[0].screenX;
-
-                },
-                { passive: true }
-            );
+            },
+            { passive: true }
+        );
 
 
-            slider.addEventListener(
-                "touchend",
-                function (event) {
+        slider.addEventListener(
+            "touchend",
+            function (event) {
 
-                    touchEndX =
-                        event.changedTouches[0].screenX;
+                touchEndX =
+                    event.changedTouches[0].screenX;
 
-
-                    const distance =
-                        touchEndX - touchStartX;
-
-
-                    if (distance < -50) {
-
-                        showSlide(currentSlide + 1);
-
-                    }
+                const distance =
+                    touchEndX - touchStartX;
 
 
-                    if (distance > 50) {
+                if (distance < -50) {
 
-                        showSlide(currentSlide - 1);
+                    showSlide(currentSlide + 1);
 
-                    }
+                }
 
-                },
-                { passive: true }
-            );
 
-        }
+                if (distance > 50) {
+
+                    showSlide(currentSlide - 1);
+
+                }
+
+            },
+            { passive: true }
+        );
 
 
         /* =========================================
-           INITIAL SLIDE
+           INITIAL
         ========================================= */
 
         showSlide(0);
