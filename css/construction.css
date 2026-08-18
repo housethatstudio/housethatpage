@@ -2115,3 +2115,12 @@ INSTAGRAM CTA
     }
 
 }
+
+
+/* Remove unwanted arrows appearing at screen edges */
+body > .construction-prev,
+body > .construction-next,
+.construction-page > .construction-prev,
+.construction-page > .construction-next {
+    display: none !important;
+}
