@@ -1640,3 +1640,429 @@ INSTAGRAM CTA
     background:#222;
 
 }
+
+
+/* =========================================
+   CONSTRUCTION PROJECT 01
+   DESKTOP:
+   INFO LEFT | SLIDER RIGHT
+========================================= */
+
+.construction-page {
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.construction-project {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 140px 7% 120px;
+
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    align-items: center;
+
+    gap: 80px;
+
+    background: #000;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PROJECT INFORMATION
+========================================= */
+
+.construction-project-info {
+    width: 100%;
+    max-width: 420px;
+}
+
+.construction-project-number {
+    display: block;
+
+    margin-bottom: 22px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    letter-spacing: 3px;
+
+    color: #c79a46;
+}
+
+.construction-project-info h1 {
+    margin: 0 0 45px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    color: #c79a46;
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.construction-location {
+    margin-bottom: 35px;
+}
+
+.construction-location span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #c79a46;
+}
+
+.construction-location p {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #fff;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.construction-project-description {
+    max-width: 390px;
+}
+
+.construction-project-description p {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #fff;
+}
+
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.construction-project-slider {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.construction-slides {
+    position: relative;
+
+    width: 100%;
+}
+
+.construction-slide {
+    display: none;
+
+    width: 100%;
+}
+
+.construction-slide.active {
+    display: block;
+}
+
+
+/* =========================================
+   IMAGE PLACEHOLDER
+========================================= */
+
+.construction-image-placeholder {
+    width: 100%;
+
+    aspect-ratio: 16 / 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #151515;
+
+    border: 1px solid rgba(199, 154, 70, 0.25);
+
+    box-sizing: border-box;
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    letter-spacing: 3px;
+
+    color: #c79a46;
+}
+
+
+/* =========================================
+   WHEN REAL IMAGES ARE ADDED
+========================================= */
+
+.construction-slide img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 0;
+}
+
+
+/* =========================================
+   SLIDER ARROWS
+========================================= */
+
+.construction-slider-arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 5;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    color: #fff;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.construction-slider-arrow:hover {
+    background: #c79a46;
+    border-color: #c79a46;
+    color: #000;
+}
+
+.construction-prev {
+    left: 20px;
+}
+
+.construction-next {
+    right: 20px;
+}
+
+
+/* =========================================
+   SLIDER DOTS
+========================================= */
+
+.construction-slider-dots {
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.construction-dot {
+    width: 7px;
+    height: 7px;
+
+    padding: 0;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.construction-dot.active {
+    background: #c79a46;
+    border-color: #c79a46;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .construction-project {
+        min-height: auto;
+
+        padding: 110px 6% 90px;
+
+        grid-template-columns: 0.8fr 1.2fr;
+
+        gap: 50px;
+    }
+
+    .construction-project-info {
+        max-width: 360px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .construction-project {
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 40px;
+
+        min-height: auto;
+
+        padding: 90px 0 80px;
+    }
+
+
+    /* IMAGE FIRST */
+
+    .construction-project-slider {
+        order: 1;
+
+        width: 100%;
+    }
+
+
+    /* INFORMATION BELOW IMAGE */
+
+    .construction-project-info {
+
+        order: 2;
+
+        width: 86%;
+        max-width: none;
+
+        margin: 0 auto;
+    }
+
+
+    .construction-project-number {
+        margin-bottom: 16px;
+
+        font-size: 13px;
+    }
+
+    .construction-project-info h1 {
+        margin-bottom: 30px;
+
+        font-size: 16px;
+    }
+
+
+    .construction-location {
+        margin-bottom: 28px;
+    }
+
+    .construction-location span {
+        font-size: 10px;
+    }
+
+    .construction-location p {
+        font-size: 14px;
+    }
+
+
+    .construction-project-description {
+        max-width: none;
+    }
+
+    .construction-project-description p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+
+    /* MOBILE ARROWS */
+
+    .construction-slider-arrow {
+        width: 36px;
+        height: 36px;
+
+        font-size: 14px;
+    }
+
+    .construction-prev {
+        left: 12px;
+    }
+
+    .construction-next {
+        right: 12px;
+    }
+
+
+    /* MOBILE DOTS */
+
+    .construction-slider-dots {
+        bottom: 12px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .construction-project-info {
+        width: 88%;
+    }
+
+}
